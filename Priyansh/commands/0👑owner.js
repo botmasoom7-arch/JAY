@@ -3,7 +3,7 @@ module.exports.config = {
 	name: "owner",
     version: "1.0.1",
 	hasPermssion: 0,
-	credits: "Arun", 
+	credits: "virat saini", 
 	description: "no prefix",
 	commandCategory: "No command marks needed",
 	usages: "...",
@@ -13,11 +13,11 @@ module.exports.config = {
 module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	var { threadID, messageID } = event;
 	let react = event.body.toLowerCase();
-	if(react.includes("boss") ||
-     react.includes("Virat") || 
-react.includes("owner")) {
+	if(react.includes("owner ") ||
+     react.includes("virat") || 
+react.includes("prefix")) {
 		var msg = {
-				body: "★𝗢𝘄𝗻𝗲𝗿 + 𝗠𝗮𝗱𝗲 𝗕𝘆 ★ 𝐎𝐰𝐧𝐞𝐫 ➻  🥀  VIRAT SAINI\n\n● ────────────────── ●\n\n𝐌𝐘 owner Virat\n\n● ────────────────── ●\n\n\n𝐎𝐰𝐧𝐞𝐫 ➻  VIRAT SAINI",
+				body: "★𝗢𝘄𝗻𝗲𝗿 + 𝗠𝗮𝗱𝗲 𝗕𝘆 ★\n\n✦🌸===『*★🌸✦\n\n ✦𝐅𝐞𝐜𝐞𝐛𝐨𝐨𝐤 𝐥𝐢𝐧𝐤\n 𝐌𝐞𝐫𝐞 𝐛𝐨𝐬𝐬 𝐤𝐚 𝐋𝐢𝐧𝐤😁😋 \n\n https://www.facebook.com/profile.php?id=61587052583313",
 				attachment: fs.createReadStream(__dirname + `/noprefix/owner.jpg`)
 			}
 			api.sendMessage(msg, threadID, messageID);
